@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #111019;
+    color: #F3ECFA;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+  }
+}
+
+/* Custom Scrollbar for dark Enderman aesthetic */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111019;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #40334F;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8053C8;
+}
+
+/* CodeMirror 6 Customizations for JVVG (Vice) */
+.cm-editor {
+  height: 100%;
+  font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace !important;
+  font-size: 13.5px;
+  background-color: #111019 !important;
+  color: #F3ECFA !important;
+}
+
+.cm-editor.cm-focused {
+  outline: none !important;
+}
+
+.cm-scroller {
+  font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace !important;
+  line-height: 1.6 !important;
+}
+
+.cm-gutters {
+  background-color: #191521 !important;
+  color: #A99DB5 !important;
+  border-right: 1px solid #40334F !important;
+  user-select: none;
+}
+
+.cm-activeLineGutter {
+  background-color: #292136 !important;
+  color: #C4A1FF !important;
+  font-weight: 600;
+}
+
+.cm-activeLine {
+  background-color: rgba(128, 83, 200, 0.09) !important;
+}
+
+/* Lexical Error Mark inside CodeMirror */
+.cm-lexical-error-mark {
+  background-color: rgba(239, 68, 68, 0.24);
+  text-decoration: wavy underline #EF4444;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+  border-radius: 2px;
+  color: #FCA5A5 !important;
+  font-weight: 600;
+  box-shadow: 0 0 8px rgba(239, 68, 68, 0.28);
+}
+
+.cm-lexical-error-line {
+  background-color: rgba(239, 68, 68, 0.08) !important;
+}
