@@ -9,7 +9,6 @@ Su motor léxico (`src/lexer/scanner.ts`) implementa un **autómata/escáner det
 ## 1. Ejecución Rápida
 
 ```bash
-cd C:\Users\viteg\.gemini\antigravity\scratch\jvvg-vice
 npm install
 npm run dev
 ```
